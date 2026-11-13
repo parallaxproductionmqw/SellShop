@@ -1,7 +1,5 @@
 # SellShop
 
-**English** | [Русский](README.ru.md)
-
 A seller (shop) plugin for Minecraft servers running Paper 26.3. Players type `/sell`, pick a category and sell items for in-game currency through Vault.
 
 - **Left click** an item: sell one stack
