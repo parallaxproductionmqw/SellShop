@@ -17,7 +17,7 @@ jobs:
           java-version: '25'
 
       - name: Unpack project
-        run: unzip -q SellShop-repo.zip
+        run: unzip -q SellShop.zip
 
       - name: Build
         run: mvn -B package
