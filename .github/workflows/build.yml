@@ -31,12 +31,14 @@ jobs:
         run: |
           JAR=$(ls SellShop/target/SellShop-*.jar | grep -v original | head -n1)
           echo "jar=$JAR" >> $GITHUB_OUTPUT
-          echo "name=$(basename "$JAR" .jar)" >> $GITHUB_OUTPUT
+          NAME=$(basename "$JAR" .jar)
+          echo "name=$NAME" >> $GITHUB_OUTPUT
+          echo "version=${NAME#SellShop-}" >> $GITHUB_OUTPUT
 
       - name: Publish release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: build-${{ github.run_number }}
-          name: ${{ steps.ver.outputs.name }} (build ${{ github.run_number }})
+          name: v${{ steps.ver.outputs.version }}
           body_path: SellShop/RELEASE_NOTES.md
           files: ${{ steps.ver.outputs.jar }}
