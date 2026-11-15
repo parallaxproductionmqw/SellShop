@@ -5,7 +5,7 @@
 **A clean, easy-to-use item shop for your Minecraft server.**
 Players type `/sell`, pick a category, click an item, and get paid. That's it.
 
-![Version](https://img.shields.io/badge/version-1.2-2ea44f?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.4-2ea44f?style=for-the-badge)
 ![Paper](https://img.shields.io/badge/Paper-26.3-1f6feb?style=for-the-badge)
 ![Java](https://img.shields.io/badge/Java-25-e76f00?style=for-the-badge)
 ![Vault](https://img.shields.io/badge/Vault-required-8957e5?style=for-the-badge)
